@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Cookies</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //     $("img").mouseover(function() {
+            //         $(this).attr("src", "./advice2.PNG");
+            //     });
+            //     $("img").mouseout(function() {
+            //         $(this).attr("src", "./cookie.jpg");
+            //     });
+            // });
+            $("img").mouseover(function() {
+                var src = "./cookie.jpg";
+                var altsrc = $(this).attr("data-alt-src");
+                if ($(this).attr("src") != src) {
+                    $(this).attr("src", src);
+                } else {
+                    $(this).attr("src", altsrc);
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <h1>Fortune Cookie</h1>
+    <p>Direction: Close your eyes then point at this page. Open your eyes and follow the advice your mouse pointers on</p>
+    <div class="container">
+        <img src='./cookie.jpg' data-alt-src='./advice2.jpg' />
+        <img src='./cookie.jpg' data-alt-src='./advice1.jpg'>
+        <img src="./cookie.jpg" data-alt-src="./advice3.jpg" alt="">
+        <img src="./cookie.jpg" data-alt-src="./advice4.jpg" alt="">
+        <img src="./cookie.jpg" data-alt-src="./advice5.jpg" alt="">
+        <img src="./cookie.jpg" data-alt-src="./advice6.jpg" alt="">
+        <img src='./cookie.jpg' data-alt-src='./advice2.jpg' />
+        <img src='./cookie.jpg' data-alt-src='./advice1.jpg'>
+        <img src="./cookie.jpg" data-alt-src="./advice3.jpg" alt="">
+        <img src="./cookie.jpg" data-alt-src="./advice4.jpg" alt="">
+        <img src="./cookie.jpg" data-alt-src="./advice5.jpg" alt="">
+        <img src='./cookie.jpg' data-alt-src='./advice2.jpg' />
+        <img src='./cookie.jpg' data-alt-src='./advice1.jpg'>
+        <img src="./cookie.jpg" data-alt-src="./advice3.jpg" alt="">
+        <img src="./cookie.jpg" data-alt-src="./advice4.jpg" alt="">
+        <img src="./cookie.jpg" data-alt-src="./advice5.jpg" alt="">
+        <img src='./cookie.jpg' data-alt-src='./advice2.jpg' />
+        <img src='./cookie.jpg' data-alt-src='./advice1.jpg'>
+        <img src="./cookie.jpg" data-alt-src="./advice3.jpg" alt="">
+        <img src="./cookie.jpg" data-alt-src="./advice4.jpg" alt="">
+        <img src="./cookie.jpg" data-alt-src="./advice5.jpg" alt="">
+        <img src='./cookie.jpg' data-alt-src='./advice1.jpg'>
+        <img src="./cookie.jpg" data-alt-src="./advice3.jpg" alt="">
+        <img src="./cookie.jpg" data-alt-src="./advice4.jpg" alt="">
+        <img src='./cookie.jpg' data-alt-src='./advice1.jpg'>
+        <img src="./cookie.jpg" data-alt-src="./advice3.jpg" alt="">
+        <img src="./cookie.jpg" data-alt-src="./advice4.jpg" alt="">
+        <img src="./cookie.jpg" data-alt-src="./advice5.jpg" alt="">
+        <img src='./cookie.jpg' data-alt-src='./advice1.jpg'>
+        <img src="./cookie.jpg" data-alt-src="./advice3.jpg" alt="">
+    </div>
+</body>
+
+</html>
